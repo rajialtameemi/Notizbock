@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="/notiz/notizblock.js"></script>
+  </head>
+
+  <body onload="render()">
+    <header>
+      <a href="trash.html"><img src="/notiz/trash.png" /></a>
+    </header>
+    <h1>Willkommen bei Notizblock</h1>
+    <div id="content" class="container">
+      <input
+        type="text"
+        id="tit"
+        class="input"
+        placeholder="Bitte hier den Titel eingeben"
+      />
+      <textarea
+        id="aufgaben"
+        placeholder="Bitte hier deine Erinnerung eingeben"
+      ></textarea>
+      <button onclick="addNote()">Hinzufügen</button>
+      <div class="delsection">
+        <h1>
+          Heute ist zum tun
+          <p></p>
+          <p>Ihre heutige Aufgaben sind</p>
+          <img src="/notiz/img/return-button-png-26.png" style="width: 50px; height: 50px;" onclick="delNote(0)">
+        
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
